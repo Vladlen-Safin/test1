@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 80px;
+    width: 100%;
+    background: #5582BD;
+    
+}
+.menu{
+    line-height: 80px;
+    margin-left: 15%;
+   list-style: none;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.menu_li{
+    
+    padding: 0 5%;
+    float: left;
+}
+.Zapis{
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 80%;
+    height: 300px;
+    background-size: cover;
+    background-image: url('../img/qtPz0qNj1YU\ 1.png');
+    border-radius: 60px;
+    
+}
+.zapis_na_pr{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    
+}
+.zapis_ul{
+    list-style: none;
+    margin-left: 10%;
+}
+.zapis_ul li{
+    
+    float: left;
+    margin-top: 7%;
+}
+.zapis_first{
+    font-size: 20px;
+    text-align: center;
+    line-height: 100px;
+    width: 350px;
+    height: 100px;
+    background-color: white;
+    border-radius: 40px;
+    /*margin-top: 7%;
+    margin-left: 6%;*/
+}
+.zapis_second{
+    font-size: 20px;
+    text-align: center;
+    line-height: 100px;
+    width: 350px;
+    height: 100px;
+    background-color: white;
+    border-radius: 40px;
+}
+.poisk{
+    margin-top: 10%;
+}
+.poisk input{
+    background: #F3F3F3 0% 0% ;
+    border-radius: 20px;
+    opacity: 1;
+    width: 50%;
+    height: 55px;
+    margin-left: 25%;
+}
+input[type=search]:focus {
+    
+    /*background-color: chartreuse;*/
+}
+.footer{
+    margin-top: 15%;
+    margin-left: 55%;
+}
+.footer ul{
+    margin-left: 10%;
+}
+.footer ul li{
+    float: left;
+    list-style: none;
+}
+.menu_li_poisk{
+    margin-right: 5%;
+    float: left;
+}
+.menu_li_poisk input{
+    height: 30px;
+    border-radius: 15px;
+}
+.nas{
+    margin-top: 5%;
+}
+.nas ul{
+    margin-left: 6%;
+}
+.nas li{
+    margin-left: 5%;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), inset 5px 5px 4px rgba(0, 0, 0, 0.25);
+    width: 300px;
+    list-style: none;
+    float: left;
+    
+}
+.nas li img{
+    margin-top: 10%;
+    margin-left: 75px;
+}
+.nas_name{
+    margin-top: 5%;
+    text-align: center;
+    
+}
+.nas_opisanie{
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.nas_kontact{
+    margin-top: 5%;
+    text-align: center;
+}
+.lich {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.lich__col {
+    border: 2px solid black;
+    width: calc(100% / 3);
+}
+
+.nas_foto{
+    margin-top: 5%;
+    display: block;
+    /*margin-left: 32%;*/
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 50%;*/
+    border-radius: 50%;
+}
+.nas_name{
+    font-weight: bold;
+    text-align: center;
+}
+.nas_opis{
+    opacity: 0.8;
+    text-align: center;
+}
+.lich_col_name{
+    text-align: center;
+}
+.lich_col_projects{
+    text-align: center;
+}
+.lich_col_container{
+    margin-top: 31%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.team_div{
+    position: absolute;
+    background: url('../img/qtPz0qNj1YU3.png') 0 0/cover no-repeat fixed;
+    
+    
+    
+    
+}
+.team_container{
+    position: relative;
+    background: #FFFFFF;
+    border: 5px solid #283186;
+    border-radius: 50px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.Opis_komand{
+    margin-left: 5%;
+}
+.wrapper{
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+summary::-webkit-details-marker{
+    display: none;
+}
+.accordion{
+    max-width: 80%;
+    
+    overflow: hidden;
+}
+.accordion__title{
+    text-transform: uppercase;
+    width: 100%;
+    text-align: left;
+    background: #D0E0E9;
+    
+    outline: none;
+    cursor: pointer;
+    padding: 10px 40px 10px 20px;
+    transition: .3s all;
+    position: relative;
+    border-radius: 20px;
+}
+.accordion__title:hover{
+    background-color: #98bbcf;
+}
+.accordion__title::after{
+    display: block;
+    content: '▼';
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s all;
+}
+.accordion__body{
+    padding: 2%;
+    border: 2px solid #364168;
+    border-radius: 20px;
+}
+.accordion__item{
+    margin: 2% 0px 0px 0px ;
+    background: linear-gradient(180deg, #DCF2FF 0%, rgba(255, 255, 255, 0) 100%);
+    
+}
+.accordion__item[open] .accordion__title::after{
+    transform: translateY(-50%) rotate(180deg);
+}
+
+
+@media (max-width: 760px) {
+  .lich {
+      flex-direction: column;
+  }
+
+  .lich__col {
+      width: 100%;
+  }
+}
+/*slidera------------------------*/
+.KVADRAT {
+    margin-top: 27px;
+    width: 65%;
+    height: 100%;
+    /*border: 5px solid;
+    border-color: red;*/
+    margin-left: 18%;
+    
+}
+.first_item_s{
+    width: 100%;
+    height: 461px;;
+}
+.KVADRAT_third{
+    margin-left: 18%;
+    width: 60%;
+    background: url('../img/people.jpg') 0 0 /100% no-repeat;
+    
+    height: 80%;
+    
+}
+.KVADRAT_third_text{
+    position: relative;
+    bottom: 100px;
+    /*width: 80%;
+    color: black;
+    background: #00000057 0% 0% no-repeat padding-box;
+    margin-top: 37%;
+    margin-left: 10%;
+    text-align: center;*/
+    background: #00000057 0% 0% no-repeat padding-box;
+    width: 80%;
+    margin-top: 48.7%;
+    margin-left: 10%;
+   
+   
+}
+.KVADRAT_third_text_a{
+    
+    color: black;
+    /*background: #00000057 0% 0% no-repeat padding-box;*/
+    
+    text-align: center;
+}
+.slider{
+    position: relative;
+    
+    
+}
+.slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    margin: -30px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 60px;
+    border: 0px solid black;
+}
+.slider .slick-arrow.slick-prev{
+    left: 0;
+    background: url('../img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+    
+    
+}
+.slider .slick-arrow.slick-next{
+    right: 0;
+    background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+}
+.slider_item{
+    
+}
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+    
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+/*КОНЕЦ СЛАЙДЕРА*/
+.TeXtnish p {
+    margin-left: 43%;
+    margin-top: 1%;
+}
+.TeXtnis p {
+     margin-left: 72%;
+    margin-top: 2%;
+}
+.TeXt p {
+     margin-left: 10%;
+}
+.f {
+    
+    
+    margin-left: 5%;
+    
+}
+.l {
+    width: 250px;
+    height: 100px;
+    list-style: none;
+    float: left;
+    box-shadow: 5px 5px 4px #364168, inset 5px 5px 4px #364168;
+    border-radius: 30px;
+    margin: 5% 2% 2% 7%;
+    
+}
+.l p{
+    text-align: center;
+    margin-top: 40px;
+}
